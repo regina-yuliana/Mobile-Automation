@@ -1,0 +1,11 @@
+# PROMO FEATURE EVERMOS STAGG:::::::::::::::::::::::::::::::::::
+appId: evermos.evermos.com.evermos.stag
+---
+- runFlow: login.yaml
+- tapOn: "Promo"
+- assertVisible:
+    text: "ELDP - Promo - Homepage"
+- extendedWaitUntil:
+    visible: "ELDP - Promo - Homepage"
+    timeout: 100000000000000
+- back 

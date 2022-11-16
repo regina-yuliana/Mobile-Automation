@@ -1,0 +1,22 @@
+# LOGIN EVERMOS STAGG::::::::::::::::::::::::::::::
+appId: evermos.evermos.com.evermos.stag
+---
+- launchApp:
+    clearState: true 
+- tapOn: "Izinkan"
+- tapOn: "Selanjutnya"
+- tapOn: "Masuk dengan kata sandi"
+- assertVisible:
+    text: "Masukkan Nomor WhatsApp Terdaftar"
+- tapOn: "Contoh: 87722200714"
+- inputText: "0895365365020"
+- tapOn:
+    point: 50,300
+- tapOn: "Ketik kata sandi"
+- inputText: "12345678"
+- hideKeyboard
+- tapOn: "Masuk"
+- assertVisible:
+    text: "Ada yang baru di Evermos!"
+
+
